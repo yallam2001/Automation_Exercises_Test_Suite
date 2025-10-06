@@ -1,0 +1,1 @@
+{"uuid":"cdcbbd3d-a650-4c52-aab2-1578b39c5a21","name":"Product_TestCases.VerifyProductPage","children":["e7f5374a-cd77-4250-aa6d-495281dbcfac"],"befores":[{"name":"setUpClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1758529916174,"stop":1758529916407}],"afters":[],"start":1758529916040,"stop":1758530312005}

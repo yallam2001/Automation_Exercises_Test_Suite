@@ -1,0 +1,1 @@
+{"uuid":"d4fe3763-a381-4ec6-8fbf-41e39a6c192b","name":"Product_TestCases.ViewCartBrandProducts","children":["cc2945a5-f38a-4615-8714-0dd853263771"],"befores":[{"name":"setUpClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1758530127614,"stop":1758530127614}],"afters":[],"start":1758529916040,"stop":1758530312005}

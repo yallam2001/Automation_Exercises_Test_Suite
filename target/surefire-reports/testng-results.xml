@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-22T11:49:36 EEST" name="AutomationExercisesSuite" finished-at="2025-09-22T11:52:53 EEST" duration-ms="196894">
+    <groups>
+    </groups>
+    <test started-at="2025-09-22T11:49:36 EEST" name="Misc_TestCases" finished-at="2025-09-22T11:52:08 EEST" duration-ms="151836">
+      <class name="Miscellaneous_TestCases.Misc_TestCases">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:49:36 EEST" name="setUpClass" finished-at="2025-09-22T11:49:36 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:49:36 EEST" name="setUpMethod" finished-at="2025-09-22T11:49:44 EEST" duration-ms="7579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="ContactUs_TestCase()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:49:44 EEST" name="ContactUs_TestCase" finished-at="2025-09-22T11:49:53 EEST" duration-ms="9004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactUs_TestCase -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:49:53 EEST" name="tearDownMethod" finished-at="2025-09-22T11:49:53 EEST" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:49:53 EEST" name="setUpMethod" finished-at="2025-09-22T11:50:10 EEST" duration-ms="16663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="Subscription_CartPage()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:50:10 EEST" name="Subscription_CartPage" finished-at="2025-09-22T11:50:13 EEST" duration-ms="3071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Subscription_CartPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:50:13 EEST" name="tearDownMethod" finished-at="2025-09-22T11:50:14 EEST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:50:14 EEST" name="setUpMethod" finished-at="2025-09-22T11:50:21 EEST" duration-ms="6960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="Subscription_HomePage()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:50:21 EEST" name="Subscription_HomePage" finished-at="2025-09-22T11:50:22 EEST" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Subscription_HomePage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:50:22 EEST" name="tearDownMethod" finished-at="2025-09-22T11:50:23 EEST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:50:23 EEST" name="setUpMethod" finished-at="2025-09-22T11:52:04 EEST" duration-ms="101074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="TestCasePage()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:52:04 EEST" name="TestCasePage" finished-at="2025-09-22T11:52:08 EEST" duration-ms="3648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCasePage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:52:08 EEST" name="tearDownMethod" finished-at="2025-09-22T11:52:08 EEST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:52:08 EEST" name="tearDownClass" finished-at="2025-09-22T11:52:08 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Miscellaneous_TestCases.Misc_TestCases -->
+    </test> <!-- Misc_TestCases -->
+    <test started-at="2025-09-22T11:52:08 EEST" name="Scrolling_TestCases" finished-at="2025-09-22T11:52:53 EEST" duration-ms="45027">
+      <class name="ScrollingHomePage_TestCases.ScrollingTestCases">
+        <test-method is-config="true" signature="setUpEnvironment()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:49:36 EEST" name="setUpEnvironment" finished-at="2025-09-22T11:49:36 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnvironment -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:08 EEST" name="setUpClass" finished-at="2025-09-22T11:52:08 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:08 EEST" name="setUpMethod" finished-at="2025-09-22T11:52:41 EEST" duration-ms="32848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="ScrollingUpWithButton_TC()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:41 EEST" name="ScrollingUpWithButton_TC" finished-at="2025-09-22T11:52:43 EEST" duration-ms="2085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollingUpWithButton_TC -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:43 EEST" name="tearDownMethod" finished-at="2025-09-22T11:52:43 EEST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:43 EEST" name="setUpMethod" finished-at="2025-09-22T11:52:51 EEST" duration-ms="7731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="ScrollingUpWithoutButton_TC()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:51 EEST" name="ScrollingUpWithoutButton_TC" finished-at="2025-09-22T11:52:52 EEST" duration-ms="1450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollingUpWithoutButton_TC -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:52 EEST" name="tearDownMethod" finished-at="2025-09-22T11:52:53 EEST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ScrollingHomePage_TestCases.ScrollingTestCases@772861aa]" started-at="2025-09-22T11:52:53 EEST" name="tearDownClass" finished-at="2025-09-22T11:52:53 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ScrollingHomePage_TestCases.ScrollingTestCases -->
+      <class name="Miscellaneous_TestCases.Misc_TestCases">
+        <test-method is-config="true" signature="setUpEnvironment()[pri:0, instance:Miscellaneous_TestCases.Misc_TestCases@37af1f93]" started-at="2025-09-22T11:49:36 EEST" name="setUpEnvironment" finished-at="2025-09-22T11:49:36 EEST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnvironment -->
+      </class> <!-- Miscellaneous_TestCases.Misc_TestCases -->
+    </test> <!-- Scrolling_TestCases -->
+  </suite> <!-- AutomationExercisesSuite -->
+</testng-results>

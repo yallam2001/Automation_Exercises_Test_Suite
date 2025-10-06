@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExercisesSuite">
+    <test name = "Authentication_TestCases">
+        <classes>
+            <class name="Authentication_TestCases.SignUp"/>
+            <class name="Authentication_TestCases.InvalidLogin"/>
+            <class name="Authentication_TestCases.ExistingEmailSignUp"/>
+            <class name="Authentication_TestCases.Logout"/>
+            <class name="Authentication_TestCases.ValidLogin"/>
+        </classes>
+    </test>
+    <test name = "Product_TestCases">
+        <classes>
+            <class name="Product_TestCases.VerifyProductPage"/>
+            <class name="Product_TestCases.SearchProduct"/>
+            <class name="Product_TestCases.AddProductsCart"/>
+            <class name="Product_TestCases.RemoveProductsFromCart"/>
+            <class name="Product_TestCases.AddToCartRecommendedItems"/>
+            <class name="Product_TestCases.AddReview"/>
+            <class name="Product_TestCases.ViewCartBrandProducts"/>
+            <class name="Product_TestCases.ViewCategoryProducts"/>
+            <class name="Product_TestCases.SearchProduct_CartLogin"/>
+        </classes>
+    </test>
+            
+    <test name = "Order_TestCases">
+        <classes>
+            <class name="Order_TestCases.PlaceOrderRegisterBeforeCheckout"/>
+            <class name="Order_TestCases.PlaceOrderRegister"/>
+            <class name="Order_TestCases.PlaceOrderLogin"/>
+            <class name="Order_TestCases.ProductQuantity"/>
+            <class name="Order_TestCases.VerifyAddressDetails"/>
+            <class name="Order_TestCases.DownloadInvoice"/>
+        </classes>
+    </test>        
+    <test name = "Misc_TestCases">
+        <classes>
+            <class name="Miscellaneous_TestCases.Misc_TestCases"/>
+
+        </classes>
+    </test>
+    <test name = "Scrolling_TestCases">
+        <classes>
+            <class name="ScrollingHomePage_TestCases.ScrollingTestCases"/>
+        </classes>
+    </test>
+</suite>
+

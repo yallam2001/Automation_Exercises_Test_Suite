@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationExercisesSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Product_TestCases(failed)" verbose="0">
+    <classes>
+      <class name="Product_TestCases.SearchProduct_CartLogin">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="setUpEnvironment"/>
+          <include name="SearchProducts_and_VerifyCartAfterLogin" invocation-numbers="1"/>
+          <include name="setUpMethod"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- Product_TestCases.SearchProduct_CartLogin -->
+      <class name="Product_TestCases.SearchProduct">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="SearchProducts" invocation-numbers="1 3 4"/>
+          <include name="setUpMethod"/>
+          <include name="setUpEnvironment"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- Product_TestCases.SearchProduct -->
+    </classes>
+  </test> <!-- Product_TestCases(failed) -->
+  <test thread-count="5" name="Order_TestCases(failed)" verbose="0">
+    <classes>
+      <class name="Order_TestCases.VerifyAddressDetails">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+          <include name="VerifyAddressDetails" invocation-numbers="0 2"/>
+          <include name="setUpEnvironment"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- Order_TestCases.VerifyAddressDetails -->
+      <class name="Order_TestCases.PlaceOrderRegister">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpMethod"/>
+          <include name="setUpEnvironment"/>
+          <include name="tearDownMethod"/>
+          <include name="PlaceOrderRegisterWhileCheckout" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- Order_TestCases.PlaceOrderRegister -->
+      <class name="Order_TestCases.PlaceOrderLogin">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="PlaceOrderLogin" invocation-numbers="0 1 2"/>
+          <include name="setUpEnvironment"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- Order_TestCases.PlaceOrderLogin -->
+      <class name="Order_TestCases.DownloadInvoice">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="setUpEnvironment"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="DownloadInvoice" invocation-numbers="0 1 2 3 4 5"/>
+        </methods>
+      </class> <!-- Order_TestCases.DownloadInvoice -->
+      <class name="Order_TestCases.PlaceOrderRegisterBeforeCheckout">
+        <methods>
+          <include name="PlaceOrderRegisterBeforeCheckout" invocation-numbers="0 1 2"/>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+          <include name="setUpEnvironment"/>
+        </methods>
+      </class> <!-- Order_TestCases.PlaceOrderRegisterBeforeCheckout -->
+    </classes>
+  </test> <!-- Order_TestCases(failed) -->
+</suite> <!-- Failed suite [AutomationExercisesSuite] -->
