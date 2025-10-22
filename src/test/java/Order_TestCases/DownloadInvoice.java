@@ -29,7 +29,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
-import mySeleniumFramework.self_selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -62,8 +61,6 @@ public class DownloadInvoice {
     private PaymentPage pay;
     private SoftAssert a;
     private WebDriver Browser;
-    private self_selenium mySel;
-    static Product[] Products;
 
     @BeforeSuite
     public void setUpEnvironment() throws IOException {
@@ -86,7 +83,6 @@ public class DownloadInvoice {
         InvoiceUser[] invoiceUser = OrderHelperClass.
                 ReadInvoiceUserData("InvoiceUser.json");
         FormUser[] forms = OrderHelperClass.ReadFormData("FormDetails.json");
-        Products = OrderHelperClass.ReadProductData("Products.json");
         // If you want to map them one-to-one (user[i] with form[i]):
         int size = Math.min(invoiceUser.length, forms.length);
         Object[][] data = new Object[size][2];
@@ -125,7 +121,6 @@ public class DownloadInvoice {
         ch = new CheckoutPage(Browser);
         pay = new PaymentPage(Browser);
         a = new SoftAssert();
-        mySel = new self_selenium(Browser);
         String CurrentURL = h.initializeBrowser();
         String ExpectedURL = "https://automationexercise.com/";
         Assert.assertTrue(CurrentURL.contains(ExpectedURL),

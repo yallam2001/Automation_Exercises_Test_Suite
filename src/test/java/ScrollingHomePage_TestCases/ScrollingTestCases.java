@@ -16,18 +16,15 @@ import io.qameta.allure.Step;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
-import mySeleniumFramework.self_selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
-import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 /**
  *
@@ -36,9 +33,7 @@ import org.testng.asserts.SoftAssert;
 public class ScrollingTestCases {
 
     private HomePage h;
-    private SoftAssert a;
     private WebDriver Browser;
-    private self_selenium mySel;
 
     @BeforeSuite
     public void setUpEnvironment() throws IOException {
@@ -67,8 +62,6 @@ public class ScrollingTestCases {
     public void setUpMethod() throws Exception {
         Browser = new EdgeDriver();
         h = new HomePage(Browser);
-        a = new SoftAssert();
-        mySel = new self_selenium(Browser);
         String CurrentURL = h.initializeBrowser();
         String ExpectedURL = "https://automationexercise.com/";
         Assert.assertTrue(CurrentURL.contains(ExpectedURL),
