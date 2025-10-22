@@ -30,10 +30,7 @@ import java.util.Properties;
 import mySeleniumFramework.self_selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
-import static org.testng.Assert.*;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -49,17 +46,9 @@ import org.testng.asserts.SoftAssert;
 public class ViewCategoryProducts {
 
     private HomePage h;
-    private SignUp_Login_Page s;
-    private CreateNewAccountPage c;
-    private AccountCreatedPage ac;
-    private AccountDeletedPage ad;
-    private ContactUsPage cu;
-    private TestCasesPage tc;
+
     private ProductsPage p;
-    private CartPage ct;
-    private CheckoutPage ch;
-    private PaymentPage pay;
-    private SoftAssert a;
+
     private WebDriver Browser;
     private self_selenium mySel;
     static Product[] Products;
@@ -110,17 +99,9 @@ public class ViewCategoryProducts {
         //        options.addArguments("--disable-notifications");
         Browser = new ChromeDriver();
         h = new HomePage(Browser);
-        s = new SignUp_Login_Page(Browser);
-        c = new CreateNewAccountPage(Browser);
-        ac = new AccountCreatedPage(Browser);
-        ad = new AccountDeletedPage(Browser);
-        cu = new ContactUsPage(Browser);
-        tc = new TestCasesPage(Browser);
+
         p = new ProductsPage(Browser);
-        ct = new CartPage(Browser);
-        ch = new CheckoutPage(Browser);
-        pay = new PaymentPage(Browser);
-        a = new SoftAssert();
+
         mySel = new self_selenium(Browser);
         String CurrentURL = h.initializeBrowser();
         String ExpectedURL = "https://automationexercise.com/";

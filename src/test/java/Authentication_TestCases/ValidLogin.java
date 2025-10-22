@@ -22,7 +22,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -38,7 +37,6 @@ public class ValidLogin {
     private AccountDeletedPage ad;
     private SoftAssert a;
     private WebDriver Browser;
-    private self_selenium mySel;
     static LoginUser[] LoginUsers;
 
     @BeforeSuite
@@ -95,7 +93,6 @@ public class ValidLogin {
         ac = new AccountCreatedPage(Browser);
         ad = new AccountDeletedPage(Browser);
         a = new SoftAssert();
-        mySel = new self_selenium(Browser);
         openHomePage();
     }
 
