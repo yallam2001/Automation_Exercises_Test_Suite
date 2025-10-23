@@ -4,9 +4,7 @@
  */
 package Authentication_TestCases;
 
-import automationExercise_Pages.AccountCreatedPage;
-import automationExercise_Pages.AccountDeletedPage;
-import automationExercise_Pages.CreateNewAccountPage;
+
 import automationExercise_Pages.HomePage;
 import automationExercise_Pages.SignUp_Login_Page;
 import io.qameta.allure.Description;
@@ -30,7 +28,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 /**
  *
@@ -40,12 +37,8 @@ public class InvalidLogin {
 
     private HomePage h;
     private SignUp_Login_Page s;
-    private CreateNewAccountPage c;
-    private AccountCreatedPage ac;
-    private AccountDeletedPage ad;
-    private SoftAssert a;
+
     private WebDriver Browser;
-    static LoginUser[] LoginUsers;
 
     @BeforeSuite
     public void setUpEnvironment() throws IOException {
@@ -93,10 +86,7 @@ public class InvalidLogin {
         Browser = new EdgeDriver();
         h = new HomePage(Browser);
         s = new SignUp_Login_Page(Browser);
-        c = new CreateNewAccountPage(Browser);
-        ac = new AccountCreatedPage(Browser);
-        ad = new AccountDeletedPage(Browser);
-        a = new SoftAssert();
+
         openHomePage();
     }
 

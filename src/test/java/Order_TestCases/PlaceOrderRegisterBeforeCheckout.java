@@ -53,8 +53,6 @@ public class PlaceOrderRegisterBeforeCheckout {
     private CreateNewAccountPage c;
     private AccountCreatedPage ac;
     private AccountDeletedPage ad;
-    private ContactUsPage cu;
-    private TestCasesPage tc;
     private ProductsPage p;
     private CartPage ct;
     private CheckoutPage ch;
@@ -62,7 +60,6 @@ public class PlaceOrderRegisterBeforeCheckout {
     private SoftAssert a;
     private WebDriver Browser;
     private self_selenium mySel;
-    static Product[] Products;
 
     @BeforeSuite
     public void setUpEnvironment() throws IOException {
@@ -86,8 +83,6 @@ public class PlaceOrderRegisterBeforeCheckout {
                 ReadRegisterBeforeCheckoutData("RegisterCheckoutDetails.json");
         FormUser[] forms = OrderHelperClass.
                 ReadFormData("FormDetails.json");
-        Products = OrderHelperClass.ReadProductData(
-                "Products.json");
         // If you want to map them one-to-one (user[i] with form[i]):
         int size = Math.min(registerBeforeCheckoutUser.length, forms.length);
         Object[][] data = new Object[size][2];
@@ -115,8 +110,6 @@ public class PlaceOrderRegisterBeforeCheckout {
         c = new CreateNewAccountPage(Browser);
         ac = new AccountCreatedPage(Browser);
         ad = new AccountDeletedPage(Browser);
-        cu = new ContactUsPage(Browser);
-        tc = new TestCasesPage(Browser);
         p = new ProductsPage(Browser);
         ct = new CartPage(Browser);
         ch = new CheckoutPage(Browser);

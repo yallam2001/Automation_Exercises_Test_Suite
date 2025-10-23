@@ -5,16 +5,10 @@
 package Miscellaneous_TestCases;
 
 import Authentication_TestCases.AllureUtil;
-import automationExercise_Pages.AccountCreatedPage;
-import automationExercise_Pages.AccountDeletedPage;
-import automationExercise_Pages.CartPage;
-import automationExercise_Pages.CheckoutPage;
+
 import automationExercise_Pages.ContactUsPage;
-import automationExercise_Pages.CreateNewAccountPage;
 import automationExercise_Pages.HomePage;
-import automationExercise_Pages.PaymentPage;
-import automationExercise_Pages.ProductsPage;
-import automationExercise_Pages.SignUp_Login_Page;
+
 import automationExercise_Pages.TestCasesPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
@@ -36,7 +30,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 /**
  *
@@ -45,17 +38,10 @@ import org.testng.asserts.SoftAssert;
 public class Misc_TestCases {
 
     private HomePage h;
-    private SignUp_Login_Page s;
-    private CreateNewAccountPage c;
-    private AccountCreatedPage ac;
-    private AccountDeletedPage ad;
+
     private ContactUsPage cu;
     private TestCasesPage tc;
-    private ProductsPage p;
-    private CartPage ct;
-    private CheckoutPage ch;
-    private PaymentPage pay;
-    private SoftAssert a;
+
     private WebDriver Browser;
     private self_selenium mySel;
 
@@ -94,17 +80,10 @@ public class Misc_TestCases {
 //        options.addArguments("--disable-notifications");
         Browser = new EdgeDriver();
         h = new HomePage(Browser);
-        s = new SignUp_Login_Page(Browser);
-        c = new CreateNewAccountPage(Browser);
-        ac = new AccountCreatedPage(Browser);
-        ad = new AccountDeletedPage(Browser);
+
         cu = new ContactUsPage(Browser);
         tc = new TestCasesPage(Browser);
-        p = new ProductsPage(Browser);
-        ct = new CartPage(Browser);
-        ch = new CheckoutPage(Browser);
-        pay = new PaymentPage(Browser);
-        a = new SoftAssert();
+
         mySel = new self_selenium(Browser);
         String CurrentURL = h.initializeBrowser();
         String ExpectedURL = "https://automationexercise.com/";

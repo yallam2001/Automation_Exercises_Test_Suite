@@ -5,7 +5,6 @@
 package Authentication_TestCases;
 
 import automationExercise_Pages.AccountCreatedPage;
-import automationExercise_Pages.AccountDeletedPage;
 import automationExercise_Pages.CreateNewAccountPage;
 import automationExercise_Pages.HomePage;
 import automationExercise_Pages.SignUp_Login_Page;
@@ -42,7 +41,6 @@ public class ExistingEmailSignUp {
     private SignUp_Login_Page s;
     private CreateNewAccountPage c;
     private AccountCreatedPage ac;
-    private AccountDeletedPage ad;
     private SoftAssert a;
     private WebDriver Browser;
 
@@ -88,7 +86,6 @@ public class ExistingEmailSignUp {
         s = new SignUp_Login_Page(Browser);
         c = new CreateNewAccountPage(Browser);
         ac = new AccountCreatedPage(Browser);
-        ad = new AccountDeletedPage(Browser);
         a = new SoftAssert();
         openHomePage();
     }

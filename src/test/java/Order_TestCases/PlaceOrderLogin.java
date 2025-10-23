@@ -33,7 +33,6 @@ import mySeleniumFramework.self_selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -54,8 +53,6 @@ public class PlaceOrderLogin {
     private CreateNewAccountPage c;
     private AccountCreatedPage ac;
     private AccountDeletedPage ad;
-    private ContactUsPage cu;
-    private TestCasesPage tc;
     private ProductsPage p;
     private CartPage ct;
     private CheckoutPage ch;
@@ -63,7 +60,6 @@ public class PlaceOrderLogin {
     private SoftAssert a;
     private WebDriver Browser;
     private self_selenium mySel;
-    static Product[] Products;
     static LoginUser[] LoginUsers;
 
     @BeforeSuite
@@ -87,7 +83,6 @@ public class PlaceOrderLogin {
         RegisterBeforeCheckoutUser[] checkoutUser = OrderHelperClass.
                 ReadRegisterBeforeCheckoutData("RegisterCheckoutDetails.json");
         FormUser[] forms = OrderHelperClass.ReadFormData("FormDetails.json");
-        Products = OrderHelperClass.ReadProductData("Products.json");
         LoginCheckoutUser[] loginCheckoutUser = OrderHelperClass.ReadLoginCheckoutData(
                 "LoginCheckoutDetails.json"); // If you want to map them one-to-one (user[i] with form[i]):
         int size = Math.min(Math.min(checkoutUser.length, forms.length),
@@ -118,8 +113,6 @@ public class PlaceOrderLogin {
         c = new CreateNewAccountPage(Browser);
         ac = new AccountCreatedPage(Browser);
         ad = new AccountDeletedPage(Browser);
-        cu = new ContactUsPage(Browser);
-        tc = new TestCasesPage(Browser);
         p = new ProductsPage(Browser);
         ct = new CartPage(Browser);
         ch = new CheckoutPage(Browser);

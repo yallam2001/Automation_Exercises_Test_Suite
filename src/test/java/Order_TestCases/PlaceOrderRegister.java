@@ -62,7 +62,6 @@ public class PlaceOrderRegister {
     private SoftAssert a;
     private WebDriver Browser;
     private self_selenium mySel;
-    static Product[] Products;
 
     @BeforeSuite
     public void setUpEnvironment() throws IOException {
@@ -87,8 +86,6 @@ public class PlaceOrderRegister {
                         "RegisterWhileCheckoutDetails.json");
         FormUser[] forms = OrderHelperClass.
                 ReadFormData("FormDetails.json");
-        Products = OrderHelperClass.ReadProductData(
-                "Products.json");
         // If you want to map them one-to-one (user[i] with form[i]):
         int size = Math.min(checkoutUsers.length, forms.length);
         Object[][] data = new Object[size][2];
