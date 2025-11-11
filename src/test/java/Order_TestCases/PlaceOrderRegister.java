@@ -53,8 +53,6 @@ public class PlaceOrderRegister {
     private CreateNewAccountPage c;
     private AccountCreatedPage ac;
     private AccountDeletedPage ad;
-    private ContactUsPage cu;
-    private TestCasesPage tc;
     private ProductsPage p;
     private CartPage ct;
     private CheckoutPage ch;
@@ -113,8 +111,6 @@ public class PlaceOrderRegister {
         c = new CreateNewAccountPage(Browser);
         ac = new AccountCreatedPage(Browser);
         ad = new AccountDeletedPage(Browser);
-        cu = new ContactUsPage(Browser);
-        tc = new TestCasesPage(Browser);
         p = new ProductsPage(Browser);
         ct = new CartPage(Browser);
         ch = new CheckoutPage(Browser);

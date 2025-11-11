@@ -1,16 +1,13 @@
 package automationExercise_Pages;
 
-import java.time.Duration;
 import mySeleniumFramework.self_selenium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class CreateNewAccountPage
         extends HomePage {
 
-    private self_selenium mySel;
-    private Select select;
+    private final self_selenium mySel;
     private final By[] locators = {By.cssSelector("div.login-form > h2.title"), //Title
         By.cssSelector("label[for=\"id_gender1\"]"), //Male option
         By.cssSelector("label[for=\"id_gender2\"]"), //Female Option

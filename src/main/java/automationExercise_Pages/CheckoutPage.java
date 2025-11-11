@@ -1,16 +1,17 @@
 package automationExercise_Pages;
 
-import java.util.ArrayList;
 import java.util.List;
-import mySeleniumFramework.self_selenium;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import mySeleniumFramework.self_selenium;
+
 public class CheckoutPage
         extends HomePage {
 
-    private self_selenium mySel;
+    private final self_selenium mySel;
 
     public CheckoutPage(WebDriver browser) {
         super(browser);
@@ -77,8 +78,7 @@ public class CheckoutPage
     }
 
     public List<String> getProductNames() {
-        return mySel.multipleLocators(productsAdded).stream().map(
-                WebElement::getText).toList();
+        return mySel.multipleLocators(productsAdded).stream().map(WebElement::getText).toList();
     }
 
     public List<String> getProductPrices() {

@@ -1,10 +1,8 @@
 package automationExercise_Pages;
 
-import java.time.Duration;
 import mySeleniumFramework.self_selenium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SignUp_Login_Page
         extends HomePage {

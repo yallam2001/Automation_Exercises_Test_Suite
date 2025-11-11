@@ -1,14 +1,12 @@
 package automationExercise_Pages;
 
-import java.time.Duration;
 import mySeleniumFramework.self_selenium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
 
-    private WebDriver browser;
-    private self_selenium mySel;
+    private final self_selenium mySel;
     private final By loginButtonLocator = By.cssSelector("i.fa-lock");
     private final By ProductsButtonLocator = By.cssSelector("i.card_travel");
     private final By CartButtonLocator = By.cssSelector(
@@ -49,7 +47,6 @@ public class HomePage {
     private final By scrollUpWithoutButton = By.cssSelector("section#slider");
 
     public HomePage(WebDriver browser) {
-        this.browser = browser;
         this.mySel = new self_selenium(browser);
     }
 

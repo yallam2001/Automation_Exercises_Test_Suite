@@ -10,13 +10,10 @@ import automationExercise_Pages.AccountDeletedPage;
 import automationExercise_Pages.CartPage;
 import automationExercise_Pages.CheckoutHelperClass;
 import automationExercise_Pages.CheckoutPage;
-import automationExercise_Pages.ContactUsPage;
 import automationExercise_Pages.CreateNewAccountPage;
 import automationExercise_Pages.HomePage;
-import automationExercise_Pages.PaymentPage;
 import automationExercise_Pages.ProductsPage;
 import automationExercise_Pages.SignUp_Login_Page;
-import automationExercise_Pages.TestCasesPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.qameta.allure.Link;
@@ -112,7 +109,6 @@ public class VerifyAddressDetails {
         c = new CreateNewAccountPage(Browser);
         ac = new AccountCreatedPage(Browser);
         ad = new AccountDeletedPage(Browser);
-
         p = new ProductsPage(Browser);
         ct = new CartPage(Browser);
         ch = new CheckoutPage(Browser);

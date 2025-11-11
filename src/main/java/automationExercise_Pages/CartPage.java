@@ -1,15 +1,17 @@
 package automationExercise_Pages;
 
 import java.util.List;
-import mySeleniumFramework.self_selenium;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import mySeleniumFramework.self_selenium;
+
 public class CartPage
         extends HomePage {
 
-    private self_selenium mySel;
+    private final self_selenium mySel;
     private final By productsAdded = By.cssSelector(
             "td.cart_description h4 a");
     private final By productsPrices = By.cssSelector("td.cart_price");
