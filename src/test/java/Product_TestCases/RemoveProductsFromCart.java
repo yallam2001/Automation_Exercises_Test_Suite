@@ -4,26 +4,12 @@
  */
 package Product_TestCases;
 
-import Authentication_TestCases.AllureUtil;
-
-import automationExercise_Pages.CartPage;
-import automationExercise_Pages.CheckoutPage;
-
-import automationExercise_Pages.HomePage;
-import automationExercise_Pages.ProductsPage;
-
-import io.qameta.allure.Description;
-import io.qameta.allure.Issue;
-import io.qameta.allure.Link;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Step;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,6 +20,19 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import Authentication_TestCases.AllureUtil;
+import automationExercise_Pages.CartPage;
+import automationExercise_Pages.CheckoutPage;
+import automationExercise_Pages.HomePage;
+import automationExercise_Pages.ProductsPage;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
+import io.qameta.allure.Link;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 
 /**
  *
@@ -179,7 +178,6 @@ public class RemoveProductsFromCart {
     @Step("Verify products before removal")
     public void verifyProductsBeforeRemoval() {
         List<WebElement> productsBeforeRemove = ch.verifyBothProductsAreAdded();
-        int productsBefore = productsBeforeRemove.size();
         for (WebElement cartProduct : productsBeforeRemove) {
             String productAdded = cartProduct.getText();
             Assert.assertTrue(productAdded.contains(cartProduct.getText()),
