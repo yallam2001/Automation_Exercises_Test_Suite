@@ -4,32 +4,12 @@
  */
 package Order_TestCases;
 
-import Authentication_TestCases.AllureUtil;
-import automationExercise_Pages.AccountCreatedPage;
-import automationExercise_Pages.AccountDeletedPage;
-import automationExercise_Pages.CartPage;
-import automationExercise_Pages.CheckoutHelperClass;
-import automationExercise_Pages.CheckoutPage;
-import automationExercise_Pages.ContactUsPage;
-import automationExercise_Pages.CreateNewAccountPage;
-import automationExercise_Pages.HomePage;
-import automationExercise_Pages.PaymentPage;
-import automationExercise_Pages.ProductsPage;
-import automationExercise_Pages.SignUp_Login_Page;
-import automationExercise_Pages.TestCasesPage;
-import io.qameta.allure.Description;
-import io.qameta.allure.Issue;
-import io.qameta.allure.Link;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Step;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
-import mySeleniumFramework.self_selenium;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -41,6 +21,26 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import Authentication_TestCases.AllureUtil;
+import automationExercise_Pages.AccountCreatedPage;
+import automationExercise_Pages.AccountDeletedPage;
+import automationExercise_Pages.CartPage;
+import automationExercise_Pages.CheckoutHelperClass;
+import automationExercise_Pages.CheckoutPage;
+import automationExercise_Pages.CreateNewAccountPage;
+import automationExercise_Pages.HomePage;
+import automationExercise_Pages.PaymentPage;
+import automationExercise_Pages.ProductsPage;
+import automationExercise_Pages.SignUp_Login_Page;
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
+import io.qameta.allure.Link;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import mySeleniumFramework.self_selenium;
 
 /**
  *
